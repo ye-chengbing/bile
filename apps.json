@@ -1,0 +1,19 @@
+{
+"happycat":{
+    "version":"0.3",
+    "download_link":[
+        "https://github.com/ye-chengbing/happycat/releases/download/0.3.1/happycat_android.apk",
+        "https://github.com/ye-chengbing/happycat/releases/download/0.3.1/happycat_linux.zip",
+        "https://github.com/ye-chengbing/happycat/releases/download/0.3.1/happycat_macOS.zip",
+        "https://github.com/ye-chengbing/happycat/releases/download/0.3.1/happycat_win.zip"
+        ],
+    "other_versions_link":"https://github.com/ye-chengbing/happycat/releases",
+    "extraction_code":"-1"
+    },
+"cap_video":{
+    "version":"1.0",
+    "download_link":"",
+    "other_versions_link":"",
+    "extraction_code":"-1"
+    }
+}

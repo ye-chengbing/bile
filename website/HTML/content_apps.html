@@ -1,0 +1,43 @@
+<!-- ==================== 主内容 ==================== -->
+
+
+<!-- ---- 页面标题 ---- -->
+<section class="page-hero">
+    <h1>应用</h1>
+    <p>用匠心打磨每一款作品，为用户带来纯粹的使用体验。</p>
+</section>
+
+<!-- ---- 筛选栏 ---- -->
+<div class="filter-bar" id="filterBar">
+    <span class="filter-label">分类</span>
+    <button class="filter-btn active" data-filter="all">全部</button>
+    <button class="filter-btn" data-filter="rpg">RPG</button>
+    <button class="filter-btn" data-filter="puzzle">休闲</button>
+    <button class="filter-btn" data-filter="strategy">策略</button>
+    <button class="filter-btn" data-filter="action">动作</button>
+    <button class="filter-btn" data-filter="simulation">模拟</button>
+</div>
+
+<!-- ---- 搜索框 ---- -->
+<div class="search-wrapper">
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="搜索应用名称或描述…" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="清空搜索">✕</button>
+    </div>
+</div>
+
+<!-- ---- 应用计数 ---- -->
+<div class="app-count" id="appCount">共 <strong id="countNum">6</strong> 款应用</div>
+
+<!-- ---- 应用卡片网格 ---- -->
+<section class="app-grid" id="appGrid">
+    <!-- 由 JavaScript 动态渲染 -->
+</section>
+
+        <!-- ---- 分页控件 ---- -->
+<div class="pagination" id="pagination">
+    <button class="page-btn" id="prevPage" disabled>← 上一页</button>
+    <span class="page-info" id="pageInfo">第 1 / 1 页</span>
+    <button class="page-btn" id="nextPage">下一页 →</button>
+</div>

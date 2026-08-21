@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>笔勒工作室</title>
+    <!-- 静态样式 -->
+    <link rel="stylesheet" href="./website/CSS/style.css" />
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="brand">笔勒 <small>Studio</small></div>
+            <ul class="nav-links">
+                <li><a href="/" data-page="index">主页</a></li>
+                <li><a href="/apps" data-page="apps">应用</a></li>
+                <li><a href="/about_us" data-page="about">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="app"></main>
+
+    <footer id="info-bar">
+        <!-- 桌面端 -->
+        <div class="info-inner">
+            <div class="info-col">
+                <h4>📬 联系我们</h4>
+                <ul>
+                    <li>QQ群聊：<a>1063706366</a></li>
+                    <li>社区合作：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                    <li>漏洞反馈：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                    <li>公平举报：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                    <li>对的没错三个一样的，因为我还没搞三个新邮箱，先用旧的顶一下吧：）</li>
+                </ul>
+            </div>
+            <div class="info-col">
+                <h4>📱 视频平台</h4>
+                <div class="platform-links">
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAAns3Lk1kvKhQoyeNfTAreSVo60zcfYZwSr_8qOq5JR1k" target="_blank">抖音</a>
+                    <a href="https://www.kuaishou.com/profile/3xnqpncacsxa3de" target="_blank">快手</a>
+                    <a href="https://space.bilibili.com/3546812094876201?spm_id_from=333.337.0.0" target="_blank">B站</a>
+                </div>
+                <p style="font-size:12px; color:var(--text-muted); margin-top:12px;">关注我们，获取最新游戏动态与开发幕后</p>
+            </div>
+            <div class="info-col">
+                <h4>💝 赞助支持</h4>
+                <div class="qr-grid">
+                    <div class="qr-item">
+                        <a href="https://ifdian.net/a/ye_chengbing" target="_blank">
+                            <img src="./website/IMG/ifd.png" alt="室长的爱发电" loading="lazy" />
+                            <span class="label">室长的爱发电</span>
+                        </a>
+                    </div>
+                </div>
+                <p style="font-size:12px; color:var(--text-muted); margin-top:8px;">您的支持是我们前行的动力 ✦</p>
+            </div>
+        </div>
+
+        <!-- 移动端 -->
+        <div class="info-mobile-tabs">
+            <div class="tab-buttons" role="tablist">
+                <p>点击查看对应项</p>
+                <button class="active" data-tab="tab-contact" role="tab" aria-selected="true">📬 联系我们</button>
+                <button data-tab="tab-platform" role="tab" aria-selected="false">📱 视频平台</button>
+                <button data-tab="tab-sponsor" role="tab" aria-selected="false">💝 赞助支持</button>
+            </div>
+            <div class="tab-panels">
+                <div class="tab-panel active" id="tab-contact" role="tabpanel">
+                    <div class="info-col">
+                        <h4>📬 联系我们</h4>
+                        <ul>
+                            <li>QQ群聊：<a>1063706366</a></li>
+                            <li>社区合作：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                            <li>漏洞反馈：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                            <li>公平举报：<a href="mailto:i0axh6f7nz@outlook.com">i0axh6f7nz@outlook.com</a></li>
+                            <li>对的没错三个一样的，因为我还没搞三个新邮箱，先用旧的顶一下吧：）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-platform" role="tabpanel">
+                    <div class="info-col">
+                        <h4>📱 视频平台</h4>
+                        <div class="platform-links">
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAns3Lk1kvKhQoyeNfTAreSVo60zcfYZwSr_8qOq5JR1k" target="_blank">抖音</a>
+                            <a href="https://www.kuaishou.com/profile/3xnqpncacsxa3de" target="_blank">快手</a>
+                            <a href="https://space.bilibili.com/3546812094876201?spm_id_from=333.337.0.0" target="_blank">B站</a>
+                        </div>
+                        <p style="font-size:12px; color:var(--text-muted); margin-top:12px;">关注我们，获取最新游戏动态与开发幕后</p>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-sponsor" role="tabpanel">
+                    <div class="info-col">
+                        <h4>💝 如果喜欢我们的作品，欢迎请开发者喝杯咖啡</h4>
+                        <div class="qr-grid">
+                            <div class="qr-item">
+                                <a href="https://ifdian.net/a/ye_chengbing" target="_blank">
+                                    <img src="./website/IMG/ifd.png" alt="室长的爱发电" loading="lazy" />
+                                    <span class="label">室长的爱发电</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p style="font-size:12px; color:var(--text-muted); margin-top:8px;">因为一些原因，目前还不能挂二维码到上面</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-copyright"><span>© 2026 笔勒工作室 · 用热爱创造世界</span></div>
+    </footer>
+
+    <!-- 静态 JavaScript -->
+    <script src="./website/JS/spa.js"></script>
+    <script src="./website/JS/apps.js"></script>
+    <script src="./website/JS/loading_footer.js"></script>
+</body>
+</html>
