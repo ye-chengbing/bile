@@ -4,7 +4,9 @@
     const appContainer = document.getElementById('app');
     const navLinks = document.querySelectorAll('#navbar .nav-links a');
 
-    // 静态页面片段映射
+    // ===== 新增：定义网站根目录 =====
+    const BASE_PATH = '/bile';
+
     const pageMap = {
         'index': 'website/HTML/content_index.html',
         'apps': 'website/HTML/content_apps.html',
@@ -37,7 +39,8 @@
                 setTimeout(window.initApps, 0);
             }
 
-            const targetPath = page === 'index' ? '/' : '/' + page;
+            // ===== 修改这里：加上 BASE_PATH =====
+            const targetPath = page === 'index' ? BASE_PATH : BASE_PATH + '/' + page;
             if (window.location.pathname !== targetPath) {
                 window.history.pushState({ page }, '', targetPath);
             }
@@ -64,8 +67,9 @@
     function init() {
         const path = window.location.pathname;
         let page = 'index';
-        if (path === '/apps') page = 'apps';
-        else if (path === '/about_us') page = 'about';
+        // ===== 修改这里：匹配带 BASE_PATH 的路径 =====
+        if (path === BASE_PATH + '/apps') page = 'apps';
+        else if (path === BASE_PATH + '/about_us') page = 'about';
         loadPage(page);
     }
 
