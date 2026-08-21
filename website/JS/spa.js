@@ -8,9 +8,9 @@
     const BASE_PATH = '/bile';
 
     const pageMap = {
-        'index': 'website/HTML/content_index.html',
-        'apps': 'website/HTML/content_apps.html',
-        'about': 'website/HTML/content_about.html'
+        'index': './website/HTML/content_index.html',
+        'apps': './website/HTML/content_apps.html',
+        'about': './website/HTML/content_about.html'
     };
 
     let currentPage = '';
