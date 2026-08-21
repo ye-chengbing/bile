@@ -96,7 +96,7 @@ window.initApps = function() {
         if (!grid) return;
 
         try {
-            const response = await fetch('/apps.json');
+            const response = await fetch('apps.json');
             if (!response.ok) throw new Error('加载 apps.json 失败');
             const data = await response.json();
 
