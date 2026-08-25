@@ -845,7 +845,7 @@ a:hover {
     margin: 4px 0 4px;
     line-height: 1.3;
 }
-.app-card .app-version {
+.app-card .app-information {
     font-size: 14px;
     color: var(--text-secondary);
     line-height: 1.6;
