@@ -861,7 +861,7 @@ a:hover {
     flex-wrap: wrap;           /* 小屏时自动换行 */
 }
 
-.app-card .app-action .app-action {
+.app-card .app-action .btn-other {
     border-radius: 30px 30px 30px 30px;
     margin-right: 0;
     background: var(--accent-gradient);
