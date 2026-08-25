@@ -74,9 +74,8 @@ window.initApps = function() {
                                 ${optionsHtml}
                             </select>
                         ` : ''}
-                        <p></p>
-                        ${otherBtn}
                     </div>
+                    ${otherBtn}
                     <div class="app-information">注意，部分下载链接来自GitHub，由于国内网络环境，速度可能会很慢甚至打不开，请耐心等待或过会再试</div>
                     ${extractionHtml}
                 </div>
