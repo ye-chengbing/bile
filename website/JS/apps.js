@@ -76,6 +76,7 @@ window.initApps = function() {
                         ` : ''}
                         ${otherBtn}
                     </div>
+                    <div class="app-version">注意，部分下载链接来自GitHub，速度可能会很慢甚至打不开，请耐心等待或过会再试</div>
                     ${extractionHtml}
                 </div>
             `;
