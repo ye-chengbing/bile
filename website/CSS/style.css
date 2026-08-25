@@ -862,19 +862,11 @@ a:hover {
 }
 
 .app-card .btn-other {
-    border-radius: 30px 30px 30px 30px;
-    margin-right: 0;
-    background: var(--accent-gradient);
-    color: #fff;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 8px 20px;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-    font-family: inherit;
-    box-shadow: 0 4px 16px rgba(74, 144, 226, 0.2);
 }
+
 
 /* 下载按钮 —— 左半胶囊 */
 .app-card .app-action .download-btn {
