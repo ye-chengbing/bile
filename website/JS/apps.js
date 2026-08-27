@@ -76,7 +76,6 @@ window.initApps = function() {
                             <div class="custom-select-wrapper">
                                 <div class="scroll-text">
                                     <span>${firstOptionText}</span>
-                                    <span>${firstOptionText}</span>
                                 </div>
                                 <select class="platform-select">
                                     ${optionsHtml}
