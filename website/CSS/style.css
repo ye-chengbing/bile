@@ -909,7 +909,7 @@ a:hover {
     font-size: 14px;
     font-weight: 600;
     font-family: inherit;
-    animation: scroll 10s linear infinite;  /* 一直滚动 */
+    animation: scroll 5s linear infinite;  /* 一直滚动 */
     position: relative;   /* 关键：让 left 生效 */
 }
 
