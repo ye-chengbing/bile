@@ -45,11 +45,14 @@ window.initApps = function() {
         let html = '';
         list.forEach((app) => {
             let optionsHtml = '';
+            let firstOptionText = '下载';  // 默认显示
             if (app.download_links && app.download_links.length > 0) {
                 app.download_links.forEach((link) => {
                     const platform = link.split('/').pop() || '下载';
                     optionsHtml += `<option value="${link}">${platform}</option>`;
                 });
+                // 取第一个选项的文字作为初始显示
+                firstOptionText = app.download_links[0].split('/').pop() || '下载';
             }
 
             let otherBtn = '';
@@ -70,9 +73,15 @@ window.initApps = function() {
                     <div class="app-action">
                         ${optionsHtml ? `
                             <a class="download-btn" href="#">下载</a>
-                            <select class="platform-select">
-                                ${optionsHtml}
-                            </select>
+                            <div class="custom-select-wrapper">
+                                <div class="scroll-text">
+                                    <span>${firstOptionText}</span>
+                                    <span>${firstOptionText}</span>
+                                </div>
+                                <select class="platform-select">
+                                    ${optionsHtml}
+                                </select>
+                            </div>
                         ` : ''}
                     </div>
                     ${otherBtn}
