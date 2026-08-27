@@ -226,6 +226,25 @@ window.initApps = function() {
 
         // 加载数据
         loadApps();
+        // 监听所有动态生成的 select 的 change 事件，更新跑马灯文字
+        grid.addEventListener('change', function(e) {
+            const select = e.target.closest('.platform-select');
+            if (!select) return;
+            const wrapper = select.closest('.custom-select-wrapper');
+            if (!wrapper) return;
+            const scrollDiv = wrapper.querySelector('.scroll-text');
+            if (!scrollDiv) return;
+        
+            // 获取选中的文本
+            const selectedText = select.options[select.selectedIndex].text;
+            // 更新两份文字
+            scrollDiv.innerHTML = `<span>${selectedText}</span><span>${selectedText}</span>`;
+            // 重置动画，让滚动重新开始
+            scrollDiv.style.animation = 'none';
+            requestAnimationFrame(() => {
+                scrollDiv.style.animation = 'scroll 10s linear infinite';
+            });
+        });
     }
 
     init();
