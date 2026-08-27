@@ -10,12 +10,6 @@
         "other_versions_link":"https://github.com/ye-chengbing/happycat/releases",
         "extraction_code":"-1"
     },
-    "cap_video":{
-        "version":"1.0",
-        "download_link":"",
-        "other_versions_link":"",
-        "extraction_code":"-1"
-    },
     "GitDnsBench":{
         "version":"1.0",
         "download_link":[
@@ -23,6 +17,12 @@
             "https://github.com/ye-chengbing/GitDnsBench/releases/download/1.0.0/git-dns-bench_v1.0.0_source.zip"
         ],
         "other_versions_link":"https://github.com/ye-chengbing/GitDnsBench/releases/",
+        "extraction_code":"-1"
+    },
+    "cap_video":{
+        "version":"1.0",
+        "download_link":"",
+        "other_versions_link":"",
         "extraction_code":"-1"
     }
 }
