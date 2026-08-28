@@ -245,8 +245,8 @@ window.initApps = function() {
         
             // 获取选中的文本
             const selectedText = select.options[select.selectedIndex].text;
-            // 更新两份文字
-            scrollDiv.innerHTML = `<span>${selectedText}</span><span>${selectedText}</span>`;
+            // 更新文字
+            scrollDiv.innerHTML = `<span>${selectedText}</span>`;
             // 重置动画，让滚动重新开始
             scrollDiv.style.animation = 'none';
             requestAnimationFrame(() => {
