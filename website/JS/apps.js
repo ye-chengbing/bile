@@ -250,7 +250,7 @@ window.initApps = function() {
             // 重置动画，让滚动重新开始
             scrollDiv.style.animation = 'none';
             requestAnimationFrame(() => {
-                scrollDiv.style.animation = 'scroll 10s linear infinite';
+                scrollDiv.style.animation = 'scroll 5s linear infinite';
             });
         });
     }
