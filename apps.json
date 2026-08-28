@@ -14,6 +14,7 @@
         "version":"1.0",
         "download_link":[
             "https://github.com/ye-chengbing/GitDnsBench/releases/download/1.0.0/git-dns-bench_v1.0.0_linux_x86_64.zip",
+            "https://github.com/ye-chengbing/GitDnsBench/releases/download/1.0.0/git-dns-bench_v1.0.0_win_x86_64.zip",
             "https://github.com/ye-chengbing/GitDnsBench/releases/download/1.0.0/git-dns-bench_v1.0.0_source.zip"
         ],
         "other_versions_link":"https://github.com/ye-chengbing/GitDnsBench/releases/",
